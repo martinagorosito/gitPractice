@@ -1,93 +1,87 @@
 * {
-    margin:0;
-    }
+    margin: 0;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-body{
-    font-family:'Noto Sans', sans-serif;
-    background-color:#EFEEEE;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #efeeee;
     display: flex;
     flex-direction: column;
     height: 100vh;
-
 }
-header img{
-    
+header img {
     width: 80px;
     height: 80px;
     padding-left: 15px;
-    
 }
-header{
-    display:flex;
+header {
+    display: flex;
     flex-direction: row;
     height: 80px;
     width: 100%;
     justify-content: space-between;
-    background-color:rgba(239, 238, 238, 0.68);
-    padding: 10px, 0px, 10px, 0px;  
+    background-color: rgba(239, 238, 238, 0.68);
+    padding: 10px, 0px, 10px, 0px;
     position: fixed;
-    z-index:10;
+    z-index: 10;
     top: 0;
-    
-    
 }
 #menu ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     height: 100%;
     padding-right: 100px;
 }
 #menu ul li {
-   list-style: none;
-    padding: 20px ;
+    list-style: none;
+    padding: 20px;
 }
-#menu ul li a{
+#menu ul li a {
     text-decoration: none;
     color: black;
 }
-#menu ul li a:hover{
-    background-color:#F41C29;
+#menu ul li a:hover {
+    background-color: #f41c29;
     border-radius: 5px;
     opacity: 90%;
     padding: 10px;
-    transform: scale(1,1);
-    
+    transform: scale(1, 1);
 }
 
-.main-1{
- display: block;
- justify-content: center;
- align-items: center;
- background-image: url(images/bloody-knife-sink.png);
- background-position: center;
- background-size: cover;
- background-repeat: no-repeat;
- height: 100vh;
- width: 100%;
+.main-1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bloody-knife-sink.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
 }
 .main-1 h1 {
-   font-size: 32px;
-   color: #33231F;
-   position: absolute;
-   top: 5vh;
-   right: 5vw;
-   padding: 120px;
-   animation: 3s infinite alternate bounce ;
+    font-size: 32px;
+    color: #33231f;
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+    padding: 120px;
+    animation: 3s infinite alternate bounce;
 }
-@keyframes bounce{
+@keyframes bounce {
     from {
         transform: translateY(-15px);
     }
-    to{
-        transform: translateY(15px)
+    to {
+        transform: translateY(15px);
     }
 }
-.main-1 h3{
+.main-1 h3 {
     font-size: 18px;
     font-style: italic;
-    color: #33231F;
+    color: #33231f;
     position: absolute;
     top: 32vh;
     right: 5vw;
@@ -96,7 +90,7 @@ header{
 
 .pericias {
     font-size: 25px;
-    color:#F5F4F4;
+    color: #f5f4f4;
     border-radius: 5px;
     background-color: #787676;
     height: 12vh;
@@ -105,50 +99,47 @@ header{
     align-items: center;
     padding-left: 5vh;
     position: absolute;
-    bottom: -5vh   
+    bottom: -5vh;
 }
-.container-1{
+.container-1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 
-   position: relative;
-   display:flex;
-   flex-direction: row;
-   width: 100%;
-   
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
- .textbox{
-  flex:1;
-  font-size: 20px;
-  background-color: rgba(229, 229, 229, 1);
-  border: 1px solid rgba(0, 0, 0, 1);
-  width: 35vw;
-  height: 12vh ;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 60px;
-  padding: 20px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  ;
+.textbox {
+    flex: 1;
+    font-size: 20px;
+    background-color: rgba(229, 229, 229, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 35vw;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 60px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-#handcuff{
+#handcuff {
     background-image: url("images/handcuff.jpg");
     background-position: left;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
     border-radius: 50%;
     width: 490px;
     min-width: 490px;
-    height: 465px;     
+    height: 465px;
     min-height: 465px;
     margin-left: 100px;
     margin-top: 30px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);  
- 
-}  
-.container-2{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
+}
+.container-2 {
     margin-top: 100px;
     background-color: rgba(235, 87, 87, 1);
     height: 336px;
@@ -156,16 +147,15 @@ header{
     display: flex;
     flex-direction: column;
     position: relative;
-      
 }
-.container-2 h4{
+.container-2 h4 {
     color: rgba(51, 35, 31, 1);
     font-size: 25px;
     padding: 10px;
     display: flex;
     justify-content: center;
 }
-.team{
+.team {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -173,64 +163,85 @@ header{
     padding: 50px;
     color: rgba(245, 244, 244, 1);
     text-align: center;
-  
 }
- .team-pic{
+.team-pic {
     width: 200px;
     height: 200px;
     display: flex;
-    position: relative;    
+    position: relative;
     bottom: 30px;
-   }
-   .contact{
-       background-color: #E5E5E5;
-       position: relative;
-       display: flex;
-       flex-direction: column;
-       align-items: flex-end;
-       justify-content: flex-end;
-       padding-bottom: 40px;
- 
-   }
-   .contact h3{
-       position: relative;
-       font-size: 30px;
-       color:rgba(51, 35, 31, 1);
-       margin-right: 30px;
-       margin-top: 40px;
-   }
-   .contact-content{
-       position: relative;
-       font-size: 20px;
-       border-radius: 5px;
-       background-color: #787676;
-       color:rgba(255, 255, 255, 1);
-       height: 60px;
-       width: 300px;
-       display: flex;
-       flex-direction: column;
-       justify-content: space-between;
-       text-align: end;    
-       padding: 10px;
-       padding-right: 25px;
+}
+.contact {
+    background-color: #e5e5e5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+}
+.contact h3 {
+    position: relative;
+    font-size: 30px;
+    color: rgba(51, 35, 31, 1);
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.contact-content {
+    position: relative;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #787676;
+    color: rgba(255, 255, 255, 1);
+    height: 60px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: end;
+    padding: 10px;
+    padding-right: 25px;
+}
+footer {
+    height: 35px;
+    width: 100%;
+    background-color: rgba(51, 35, 31, 1);
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    text-align: center;
+}
+.footer {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
 
-   }
-   footer{
-       height: 35px;
-       width: 100%;
-       background-color: rgba(51, 35, 31, 1);
-       color: rgba(255, 255, 255, 1);
-       position: relative;
-   }
-   .footer{       
-       display: inline-block;
-       padding-right: 20px;
-       padding-left: 20px;
-   }
-   @media only screen and (max-width: 1024px){
-       .team{
-           flex-wrap:wrap;
-           overflow:scroll
-       }
-       
-   }
+.footer:nth-of-type(2)::after,
+.footer:nth-of-type(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    width: 1px;
+    height: 19px;
+}
+
+/* corrections: adding pseude elements to footer text  */
+
+.footer:nth-of-type(2)::after {
+    right: -10px;
+}
+
+.footer:nth-of-type(2)::before {
+    left: -10px;
+}
+
+/* changin flow of grid for responsive design  */
+
+@media only screen and (max-width: 1024px) {
+    .team {
+        overflow-x: scroll;
+    }
+}
