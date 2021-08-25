@@ -26,29 +26,67 @@ header {
     position: fixed;
     z-index: 10;
     top: 0;
+    
 }
-#menu ul {
-    display: flex;
+.lupita{
+    width: 50px;
+    height: auto;
+    
+}
+#menu ul{
+    display:flex;
     flex-direction: row;
     align-items: center;
     height: 100%;
-    padding-right: 100px;
 }
-#menu ul li {
+#menu ul li{
     list-style: none;
-    padding: 20px;
+    padding: 20px ;
 }
-#menu ul li a {
+#menu a{
     text-decoration: none;
     color: black;
 }
-#menu ul li a:hover {
-    background-color: #f41c29;
+.dropdown{
+    position: relative;
+    align-items: center;
+}
+.dropdown img{
+    width: 14px;
+    height: 10px;
+    padding: 0;
+}
+.dropdown-content{
+    position: absolute;
+    margin-top: 10px;
+    min-width: 15vw;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius:5px ;
+    display: none;
+}
+.dropdown-content a{
+    padding: 15px;
+    align-items: center;
+    font-size: 1rem;
+    color: rgba(51, 35, 31, 1);
+    min-width: 15vw;
+    height: 100%;
+    
+}
+.menu-items a:hover{
+    background-color:rgba(235, 87, 87, 1);
     border-radius: 5px;
     opacity: 90%;
-    padding: 10px;
-    transform: scale(1, 1);
+    padding: 10px;    
 }
+.dropdown-content a:hover{
+    background-color: rgba(235, 87, 87, 1);
+}
+.dropdown:hover .dropdown-content{
+    display:flex;
+    flex-direction: column;
+}
+
 
 .main-1 {
     display: block;
@@ -62,15 +100,15 @@ header {
     width: 100%;
 }
 .main-1 h1 {
-    font-size: 32px;
-    color: #33231f;
-    position: absolute;
-    top: 5vh;
-    right: 5vw;
-    padding: 120px;
-    animation: 3s infinite alternate bounce;
+   font-size: 2rem;
+   color: #33231F;
+   position: absolute;
+   top: 5vh;
+   right: 5vw;
+   padding: 120px;
+   animation: 3s infinite alternate bounce ;
 }
-@keyframes bounce {
+@keyframes bounce{
     from {
         transform: translateY(-15px);
     }
@@ -78,8 +116,8 @@ header {
         transform: translateY(15px);
     }
 }
-.main-1 h3 {
-    font-size: 18px;
+.main-1 h3{
+    font-size: 1.2rem;
     font-style: italic;
     color: #33231f;
     position: absolute;
@@ -89,12 +127,12 @@ header {
 }
 
 .pericias {
-    font-size: 25px;
-    color: #f5f4f4;
+    font-size: 1.5rem;
+    color:#F5F4F4;
     border-radius: 5px;
     background-color: #787676;
     height: 12vh;
-    width: 32vw;
+    min-width: 32vw;
     display: flex;
     align-items: center;
     padding-left: 5vh;
@@ -244,4 +282,27 @@ footer {
     .team {
         overflow-x: scroll;
     }
-}
+
+   }
+   footer{
+       height: 35px;
+       width: 100%;
+       background-color: rgba(51, 35, 31, 1);
+       color: rgba(255, 255, 255, 1);
+       position: relative;
+   }
+   .footer{       
+       display: inline-block;
+       padding-right: 20px;
+       padding-left: 20px;
+   }
+   @media only screen and (max-width: 1024px){
+       .team{
+           flex-wrap:wrap;
+           overflow:scroll
+       }
+       .pericias{
+           padding-left: 5px;
+       }
+       
+   }
