@@ -31,7 +31,6 @@ header {
 .lupita{
     width: 50px;
     height: auto;
-    
 }
 #menu ul{
     display:flex;
@@ -89,24 +88,27 @@ header {
 
 
 .main-1 {
-    display: block;
-    justify-content: center;
-    align-items: center;
     background-image: url(images/bloody-knife-sink.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 .main-1 h1 {
    font-size: 2rem;
    color: #33231F;
-   position: absolute;
-   top: 5vh;
-   right: 5vw;
-   padding: 120px;
+   position: relative;
+   width: fit-content;
+   height: fit-content;
+   top: 15vh;
+   right: 10vw;
+   padding: 50px;
    animation: 3s infinite alternate bounce ;
+
 }
 @keyframes bounce{
     from {
@@ -120,10 +122,10 @@ header {
     font-size: 1.2rem;
     font-style: italic;
     color: #33231f;
-    position: absolute;
-    top: 32vh;
+    position: relative;
     right: 5vw;
-    width: 520px;
+    top: 15vh;
+    width: 520px;  
 }
 
 .pericias {
@@ -135,32 +137,33 @@ header {
     min-width: 32vw;
     display: flex;
     align-items: center;
-    padding-left: 5vh;
+    padding-left: 20px;
     position: absolute;
-    bottom: -5vh;
+    top: 94vh;
 }
 .container-1 {
     position: relative;
     display: flex;
     flex-direction: row;
     width: 100%;
-
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .textbox {
     flex: 1;
     font-size: 20px;
     background-color: rgba(229, 229, 229, 1);
     border: 1px solid rgba(0, 0, 0, 1);
-    width: 35vw;
-    height: 12vh;
+    width: 65%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 60px;
-    padding: 20px;
+    margin: 50px;
+    left: 2vw;
+    top: 10vh;
+    padding: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 #handcuff {
@@ -168,13 +171,12 @@ header {
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+    float: right;
     border-radius: 50%;
-    width: 490px;
     min-width: 490px;
-    height: 465px;
     min-height: 465px;
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-right: 10vw;
+    margin-top: 15vh;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);
 }
 .container-2 {
@@ -240,23 +242,22 @@ header {
     padding: 10px;
     padding-right: 25px;
 }
-footer {
-    height: 35px;
-    width: 100%;
-    background-color: rgba(51, 35, 31, 1);
-    color: rgba(255, 255, 255, 1);
-    position: relative;
-    text-align: center;
-}
-.footer {
-    display: inline-block;
-    padding-right: 20px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.footer:nth-of-type(2)::after,
-.footer:nth-of-type(2)::before {
+   footer{
+       height: 35px;
+       width: 100%;
+       background-color: rgba(51, 35, 31, 1);
+       color: rgba(255, 255, 255, 1);
+       position: relative;
+       text-align: center;
+   }
+   .footer-copyright{       
+       display: inline-block;
+       padding-right: 20px;
+       padding-left: 20px;
+       position: relative;
+   }
+   .footer-copyright:nth-of-type(2)::after,
+   .footer-copyright:nth-of-type(2)::before {
     content: "";
     position: absolute;
     top: 0;
@@ -264,45 +265,53 @@ footer {
     background-color: white;
     width: 1px;
     height: 19px;
-}
-
-/* corrections: adding pseude elements to footer text  */
-
-.footer:nth-of-type(2)::after {
+   }
+   .footer-copyright:nth-of-type(2)::after {
     right: -10px;
 }
-
-.footer:nth-of-type(2)::before {
+   .footer-copyright:nth-of-type(2)::before {
     left: -10px;
 }
-
-/* changin flow of grid for responsive design  */
-
-@media only screen and (max-width: 1024px) {
+   @media only screen and (max-width: 1024px) {
     .team {
         overflow-x: scroll;
     }
-
-   }
-   footer{
-       height: 35px;
-       width: 100%;
-       background-color: rgba(51, 35, 31, 1);
-       color: rgba(255, 255, 255, 1);
-       position: relative;
-   }
-   .footer{       
-       display: inline-block;
-       padding-right: 20px;
-       padding-left: 20px;
-   }
-   @media only screen and (max-width: 1024px){
-       .team{
-           flex-wrap:wrap;
-           overflow:scroll
-       }
-       .pericias{
-           padding-left: 5px;
-       }
-       
-   }
+    .container-1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 625px) {
+ header{
+     height: auto;
+     flex-direction: column;
+     align-items: flex-start;
+     position: relative;
+ }
+ header img{
+     position: absolute;
+     margin: 0;
+     padding: 10px;
+     width: 40px;
+     height: 40px;
+ }
+.lupita{
+    display: none;
+}
+.dropdown img{
+    padding: 5px;
+}
+.main-1{
+    background-position: 75%;
+}
+.main-1 h1{
+    width: 45%;;
+}
+.main-1 h3{
+    width: 80%;
+}
+.pericias{
+    top: 100vh;
+    width: 80%;
+}
+}
