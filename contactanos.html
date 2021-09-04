@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="position: relative">
+        <a href="index.html"><img src= "images/sherlock.png" ></a>
+        <nav id= "menu" >
+                <ul>
+                    <li class= "dropdown">
+                        <a class="dropdown-btn" href="javascript:void(0)"> Asesoramiento</a>
+                        <img src="images/Polygon 1.png">
+                        <div class= "dropdown-content">
+                            <a href="periciaDoc.html">Pericia Documentologica</a>
+                            <a href="periciaPap.html">Pericia Papiloscopica</a>
+                            <a href="periciaBal.html">Pericia Balistica</a>
+                        </div>
+                    </li>
+
+                    <li class="menu-items"><a href="precios.html">Precios</a></li>
+                    <li class= "menu-items"><a href="conocenos.html">Conocenos</a></li>
+                    <li><img src="images/lupa.png" class="lupita"></li>
+                </ul>
+        </nav>
+    </header>
+    <section class="contactanos">
+        <form class= "form-container" onsubmit="" id="contact-form">
+            <div><label for="fullname" >Nombre y Apellido</label>
+                 <input type= "text" placeholder="Nombre y Apellido *" id="fullname">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type= "text" placeholder="Email * " id="email">
+            </div>
+            <div>
+                <label>Perito Requerido</label>
+                <select name= "Perito">
+                    <option hidden selected required>Seleccionar</option>
+                    <option value ="Martinez">Gabriela Matinez Corbalan</option>
+                    <option value= "Lopez">Marianela López</option>
+                    <option value= "Patrono">Nicole Patrono</option>
+                    <option value= "Romero">Solana Romero</option>
+                    <option value= "Signes">Natacha Signes</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Descripcion del caso</label>
+                <textarea id="description" placeholder="Insertar texto"></textarea>
+            </div> 
+            <button type="submit" form= "contact-form" value="submit" class="button" >Enviar</button>       
+           
+        </form>
+
+    </section>
+    <footer>
+        <p class="footer-copyright">&copy Elemental</p>
+        <p class="footer-copyright">2021</p>
+        <p class="footer-copyright"> By Florpe ✨</p>
+    </footer>
+    <script src=index.js></script>    
+</body>
+</html>
+ 
